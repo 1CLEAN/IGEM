@@ -1,0 +1,18 @@
+npts 66 126 50                       # num.grid points in xyz
+gridfld HFBI.maps.fld                # grid_data_file
+spacing 0.913888888889               # spacing(A)
+receptor_types C H HD N OA SA        # receptor atom types
+ligand_types A C HD N NA OA SA       # ligand atom types
+receptor HFBI.pdbqt                  # macromolecule
+gridcenter 0.0 0.0 0.0               # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map HFBI.A.map                       # atom-specific affinity map
+map HFBI.C.map                       # atom-specific affinity map
+map HFBI.HD.map                      # atom-specific affinity map
+map HFBI.N.map                       # atom-specific affinity map
+map HFBI.NA.map                      # atom-specific affinity map
+map HFBI.OA.map                      # atom-specific affinity map
+map HFBI.SA.map                      # atom-specific affinity map
+elecmap HFBI.e.map                   # electrostatic potential map
+dsolvmap HFBI.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant
